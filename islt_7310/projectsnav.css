@@ -1,13 +1,18 @@
 ul{
     text-align:center;
 }
-li {
+ul li {
     display: inline; 
     border: none;
     text-decoration: underline;
     text-align: center;
-    width: 150px;
     list-style-type: none;
     padding: 75px 75px 75px;
     margin-top: 0;
+    position: relative;
+}
+
+ul li ul{
+    display: block;
+    position: absolute;
 }
