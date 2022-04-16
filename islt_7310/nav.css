@@ -14,13 +14,11 @@ nav ul li {
 }
 
 nav ul li ul{
+    display: none;
     position: absolute;
     padding: 10px; 
-    display: block; 
 }
 
-nav ul li ul li {
-    width: 100px;
-    display: block; 
-    padding: 0px 40px;   
-}
+nav ul li:hover ul{
+    display: block;  
+} 
