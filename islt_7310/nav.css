@@ -10,21 +10,17 @@ nav ul li {
     padding: 75px 75px 75px;
     margin-top: 0;
     position: relative;
+    width:0;
 }
 
 nav ul li ul{
-    display: none;
     position: absolute;
     padding: 10px; 
-}
-
-nav ul li:hover ul{
-    display: block;  
+    display: block; 
 }
 
 nav ul li ul li {
     width: 100px;
-    text-align: center;
     display: block; 
     padding: 0px 40px;   
 }
