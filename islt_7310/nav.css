@@ -1,13 +1,24 @@
-ul{
+nav ul{
     text-align:center;
 }
-li {
+nav ul li {
     display: inline; 
     border: none;
     text-decoration: underline;
     text-align: center;
-    width: 150px;
     list-style-type: none;
     padding: 75px 75px 75px;
     margin-top: 0;
+    position: relative;
+}
+
+nav ul li ul{
+    display: block;
+    position: absolute;
+    padding: 10px;
+}
+
+nav ul li ul li {
+    width: 10px;
+    text-align: center;    
 }
