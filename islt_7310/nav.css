@@ -22,3 +22,7 @@ nav ul li ul{
 nav ul li:hover ul{
     display: block;  
 } 
+
+nav ul li ul li {
+    width: 100px;   
+}
