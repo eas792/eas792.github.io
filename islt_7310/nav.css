@@ -24,9 +24,7 @@ nav ul li:hover ul{
 
 nav ul li ul li {
     width: 100px;
-    text-align: center;     
-}
-
-nav ul li ul li a {
-    padding: 0px 10px;
+    text-align: center;
+    display: block; 
+    padding: 0px 40px;   
 }
