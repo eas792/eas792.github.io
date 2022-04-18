@@ -1,1 +1,16 @@
-h1 {color: #009966;}
+h1 {
+    color: #009966;
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+}
+
+h3 {color: #009966;}
+
+p::first-letter {
+    font-size: 140%;
+    font-family: 'Serif';
+}
+
+p + p {
+    text-indent: 2em;
+  }
