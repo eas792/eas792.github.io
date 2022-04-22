@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  } 
+
 h1 {
     color: #009966;
     text-align: center;
@@ -14,3 +18,55 @@ p::first-letter {
 p + p {
     text-indent: 2em;
   }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px 0px 10px 0px;
+    width: 100%;
+    background-color: white;
+    color: #009966;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        display: flex;
+    }
+}
+
+.split {
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    overflow-x: auto;
+    padding-top: 20px;
+}
+.left {
+    left: 0;
+    background-color:#009966;
+    height: 400px;
+}
+
+.right {
+    right: 0;
+    background-color: #009966;
+    height: 400px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+

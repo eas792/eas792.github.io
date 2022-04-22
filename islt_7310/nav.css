@@ -1,10 +1,13 @@
+nav{
+    background-color:  #009966;
+    width: 100%;
+}
 nav ul{
     text-align:center;
 }
 nav ul li {
     display: inline-block; 
     border: none;
-    text-decoration: underline;
     text-align: center;
     list-style-type: none;
     padding: 10px 75px 10px 75px;
@@ -12,7 +15,12 @@ nav ul li {
     position: relative;
     width:0;
 }
-
+nav ul li a{
+    font-size: 20px;
+    font-family: Baskerville;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 nav ul li:hover ul{
     display: block;  
 } 
@@ -20,7 +28,10 @@ nav ul li:hover ul{
 nav ul li ul{
     display: none;
     position: absolute;
-    top: 10px;
+    background-color:  #009966;
+    color: #FFFFFF;
+    text-decoration: none;
+    top: 30px;
     left: 40px;
     width: 100px;  
     padding: 10px 10px 10px 10px; 
