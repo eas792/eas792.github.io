@@ -15,6 +15,8 @@
 
         <meta charset="utf-8">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="nav.css">
@@ -23,63 +25,65 @@
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href ="index.html"> Home </a></li>
-            
-            <li><a href ="about.html"> About </a></li>
-    
-            <li><a href ="#project.html"> Projects </a>
+    <div id= "aboutcontainer">
+
+        <nav>
+
+            <label for="toggle">&#9776;</label>
+
+            <input type="checkbox" id="toggle"/>
+
                 <ul>
-                    <li><a href ="#"> List 1 </a></li>
+
+                    <li><a href ="index.html"> Home </a></li>
+                    
+                    <li><a href ="about.html"> About </a></li>
             
-                    <li><a href ="#"> List 2 </a></li>
+                    <li><a href ="#project.html"> Projects </a>
+                        <ul>
+                            <li><a href ="#"> Project 1 </a></li>
+                    
+                            <li><a href ="#"> Project 2 </a></li>
+                    
+                            <li><a href ="#"> Project 3 </a></li>
+                        </ul>
+                    </li>
             
-                    <li><a href ="#"> List 3 </a></li>
+                    <li><a href ="Reflection.html"> Reflection </a></li>
+                    
+                    <li><a href ="#contact.html"> Contact </a></li>
+
                 </ul>
-            </li>
-    
-            <li><a href ="Reflection.html"> Reflection </a></li>
-            
-            <li><a href ="#contact.html"> Contact </a></li>
-        </ul>
-    </nav>
 
-<header>
+        </nav>
 
-<h1>About Me: Elizabeth Schlaker</h1>
+        <header>
 
-</header>
+            <h1>About Me: Elizabeth Schlaker</h1>
 
-<main>
-<div class = "split left">
+        </header>
 
-    <h3>Education Overview</h3>
+        <div id= "maincontent"> 
 
-    <p>Currently I am a junior at the <strong>University of Missouri</strong>. I will graduate December 2022 with a Bachelor of Art in Communication along with minors in information technology, film studies, and Spanish. I will also graduate with an information systems certificate, media technology and design certificate, multicultural certificate, and honors college certificate. </p>
+            <h3>Education Overview</h3>
 
-    <br />
+            <p>Currently I am a junior at the <strong>University of Missouri</strong>. I will graduate December 2022 with a Bachelor of Art in Communication along with minors in information technology, film studies, and Spanish. I will also graduate with an information systems certificate, media technology and design certificate, multicultural certificate, and honors college certificate. </p>
 
-    <p>For the past two years I have worked as a Resident Advisor with the <em>Department of Residential Life</em>, and this past semester I began working as a marketing intern at a local bond company. On campus I serve on the executive board of Mizzou’s communication honors society, <em>Lambda Pi Eta</em>, as secretary. I am also treasurer of <em>Shot Reverse Shot</em>, a student run video production organization. For six semesters I have been a member of <em>Little Sisters of the Gold Rose</em>, a service sorority. </p>
+            <br />
 
-    <br />
+            <p>For the past two years I have worked as a Resident Advisor with the <em>Department of Residential Life</em>, and this past semester I began working as a marketing intern at a local bond company. On campus I serve on the executive board of Mizzou’s communication honors society, <em>Lambda Pi Eta</em>, as secretary. I am also treasurer of <em>Shot Reverse Shot</em>, a student run video production organization. For six semesters I have been a member of <em>Little Sisters of the Gold Rose</em>, a service sorority. </p>
 
-    <blockquote cite="https://www.goodreads.com/quotes/270474-no-matter-what-happens-in-life-be-good-to-people">"Being good to people is a wonderful legacy to leave behind." -Taylor Swift</blockquote>
+            <br />
 
-    <p>For my full resume, click <a href ="SchlakerResume.pdf"> here. </a></p>
+            <p>For my full resume, click <a href ="SchlakerResume.pdf"> here. </a></p>
 
-</div>
+        </div>
 
-<div class = "split right">
+        <div id= "aboutphoto"> <img src= "NewHeadshot.png" alt= "Picture of Elizabeth" width = "40%"></div>
 
-    <img src= "NewHeadshot.png" alt= "Picture of Elizabeth">
+        <footer>Contact me! Elizabeth Schlaker: eas792@umsystem.edu Copyright 2022</footer>
 
-</div>
-
-<footer>Contact me! Elizabeth Schlaker: eas792@umsystem.edu Copyright 2022</footer>
-
-</main>
-
+    </div>
 </body>
 
 </html>

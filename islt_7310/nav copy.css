@@ -114,7 +114,6 @@ nav label, #toggle{
     display: none;
 }
 
-
 @media only screen and (max-width: 400px) {
     nav label{
         display: inline-block;
@@ -135,4 +134,5 @@ nav label, #toggle{
     }
     
 }
+
 
