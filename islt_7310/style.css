@@ -6,10 +6,12 @@ html {
 h1 {
     color: #009966;
     text-align: center;
-    padding: 40px 0px 20px 0px;
 }
 
-h3 {color: white}
+h3 {
+  color: white;
+  padding: 15px 10px 0 10px;
+}
 
 p::first-letter {
     font-size: 140%;
