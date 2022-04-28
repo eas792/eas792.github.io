@@ -71,7 +71,11 @@ label{
         display: block;
         margin:0;
     }
-    #toggle:checked + nav{
+    #hamitems{
+        display:none;
+
+    }
+    .navigation:checked ~ hamitems{
         display: block;
     }
 }
@@ -83,21 +87,21 @@ label{
     height: 100vh;
     grid-template-columns: 60% 40%;
     grid-template-rows: 10% 10% 70% 10%;
+    grid-auto-flow: row;
     gap: .2rem;
     grid-template-areas:
-        "nav nav"
-        "header header"
+        "Navigation Navigation"
+        "Header Header"
         "maincontent aboutphoto"
-        "footer footer";
+        "Footer Footer";
 }
 
-nav{
-    grid-area: nav;
+.Navigation{
+    grid-area: Navigation;
 }
-header{
-    grid-area: header;
+.Header{
+    grid-area: Header;
     text-align: center;
-    
 }
 .maincontent{
     grid-area: maincontent;
@@ -106,22 +110,21 @@ header{
     padding: 0 20px 0 20px;
 }
 .aboutphoto{
-    grid-area: aboutphoto;
     background-color: #009966;
+    grid-area: aboutphoto;
 }
 
-#aboutphoto > img {
+.aboutphoto > img {
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    width: 40%;
   }
 
 img{
     align-items: center;
 }
 
-footer{
-    grid-area: footer;
+.Footer{
+    grid-area: Footer;
     position: fixed;
     left: 0;
     bottom: 0;
