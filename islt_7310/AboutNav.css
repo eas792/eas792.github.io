@@ -215,15 +215,15 @@ p + p {
         background: transparent !important;
         color: black !important;
     }
-    .Navigation, .photo{
+    .Navigation, .photo, .mailphoto, .phonephoto{
         display: none;
     }
     .aboutcontainer{
         display: grid;
         height: 100vh;
         grid-template-columns: 100%;
-        grid-template-rows: 20% 70% 10%;
-        grid-auto-flow: row;
+        grid-template-rows: 10% 80% 10%;
+        grid-auto-flow: column;
         gap: .2rem;
         grid-template-areas:
             "Header"
@@ -233,9 +233,14 @@ p + p {
     .maincontent{
         margin: 0in 1in 0in 1in;
         font-family: Arial;
+        font-size: 15px;
     }
     .Footer{
         text-align: center;
+        font-family: Arial;
+        position: fixed;
+    }
+    h3{
         font-family: Arial;
     }
 
