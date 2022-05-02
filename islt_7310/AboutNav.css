@@ -49,7 +49,7 @@ nav ul li ul li{
 }
 
 nav ul li ul li a{
-    padding: 15px 0x 20px 0px;
+    padding: 15px 0px 20px 0px;
 }
 label{
     margin: 0 40px 0 0;
@@ -58,44 +58,6 @@ label{
 }
 #toggle{
     display: none;
-}
-@media screen and (max-width: 750px){
-    label{
-        display: block;
-        cursor: pointer;
-        color: white;
-        font-size: 30px;
-    }
-    nav ul{
-        width: 100%;
-        background: black;
-    }
-
-    nav ul li a{
-        display: block;
-        margin:0;
-    }
-    #hamitems{
-        display:none;
-
-    }
-    .navigation:checked ~ hamitems{
-        display: block;
-    }
-    .aboutcontainer{
-        display: grid;
-        min-height: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 10% 35% 35% 10%;
-        grid-auto-flow: column;
-        gap: .2rem;
-        grid-template-areas:
-            "Navigation"
-            "Header"
-            "maincontent"
-            "aboutphoto"
-            "Footer";
-    }
 }
 
 /*grid formatting*/
@@ -186,7 +148,23 @@ img{
 #phonecontainer:hover .phonephoto{
     width: 30px;
 }
-
+/*small screen*/
+@media screen and (max-width: 750px){
+    .aboutcontainer{
+        display: grid;
+        min-height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 35% 35% 10%;
+        grid-auto-flow: column;
+        gap: .2rem;
+        grid-template-areas:
+            "Navigation"
+            "Header"
+            "maincontent"
+            "aboutphoto"
+            "Footer";
+    }
+}
 /*style sheet notes*/
 
 html {
