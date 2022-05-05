@@ -50,30 +50,21 @@ nav ul li ul li{
 nav ul li ul li a{
     padding: 15px 0px 20px 0px;
 }
-label{
-    margin: 0 40px 0 0;
-    font-size: 25px;
-    display: none;
-}
-#toggle{
-    display: none;
-}
 
 /*grid formatting*/
 
 .aboutcontainer{
     display: grid;
     min-height: 100%;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 10% 10% 45% 25% 10%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 10% 60% 15%;
     grid-auto-flow: row;
     gap: .2rem;
     grid-template-areas:
-        "Navigation Navigation"
-        "Header Header"
-        "maincontent photo"
-        "tables tables"
-        "Footer Footer";
+        "Navigation"
+        "Header"
+        "maincontent"
+        "Footer";
 }
 
 .Navigation{
@@ -85,7 +76,7 @@ label{
 .maincontent{
     grid-area: maincontent;
     background-color: #7ab8f7;
-    margin: 10px;
+    margin: 50px;
     padding: 0 20px 0 20px;
     min-height: 100%;
     overflow: scroll;
@@ -104,37 +95,6 @@ img{
     object-fit: cover;
     min-width:100%;
     min-width: 90%;
-}
-.tables{
-    grid-area: tables;
-    background-color: #7ab8f7;
-    margin: 10px;
-    padding: 10px 50px 10px 50px;
-    min-height: 100%;
-    overflow: scroll;
-}
-/*table styles*/
-
-table{
-    border-collapse: collapse;
-}
-table th{
-    text-align:left;
-    background-color:#0f77df;
-    color: white;
-    padding: 4px 30px 4px 8px;
-}
-table td{
-    border: 1px solid grey;
-    padding: 4px 8px;
-    color: black;
-}
-table tr:nth-child(odd) td{
-    background-color: white;
-}
-table tr:first-child, table tr:last-child{
-    background-color:#0f77df;
-    color: white;
 }
 
 .Footer{
@@ -218,21 +178,28 @@ p::first-letter {
 p + p {
     text-indent: 2em;
   }
+
+
+label{
+    display: block;
+    font-size: 25px;
+    color:white;
+    padding: 10px 10px;
+}
+
 /*mobile*/
 @media screen and (max-width: 750px){
     .aboutcontainer{
         display: grid;
         min-height: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 10% 20% 20% 30% 10%;
+        grid-template-rows: 15% 15% 60% 10%;
         grid-auto-flow: column;
         gap: .2rem;
         grid-template-areas:
             "Navigation"
             "Header"
             "maincontent"
-            "photo"
-            "tables"
             "Footer";
     }
 }

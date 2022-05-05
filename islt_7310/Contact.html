@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-
+<!-- 
+    ***************************
+    Title: Contact Page
+    Author: Elizabeth Schlaker
+    Developed: April 17, 2022
+    ***************************
+-->
 <html lang="en-US">
-    
-<head>
-    
-    <title>Projects</title>
 
-    <link rel="stylesheet" href="Project123Nav.css">
+<head>
+
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/png" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&display=swap">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
 
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="ContactNav.css">
 
 </head>
 
@@ -25,11 +31,8 @@
         <div class= "Navigation">
 
             <nav>
-
-                <label for="toggle">&#9776;</label>
-
-                <input type="checkbox" id="toggle"/>
-
+                
+                <div class= "dropdown" id= "hamitems">
                     <ul>
 
                         <li><a href ="Index.html"> Home </a></li>
@@ -51,41 +54,43 @@
                         <li><a href ="Contact.html"> Contact </a></li>
 
                     </ul>
-
-            </nav>
-
+                    
+                </div>
+            </nav>  
         </div>
 
         <div class= "Header">
 
             <header>
 
-            <h1 id= "h1">My Projects: Motion Graphic Effects</h1>
+            <h1 id= "h1">My Contact Page</h1>
 
             </header>
 
         </div>
 
-        <div class= "maincontent">
+        <form class= "maincontent">
 
-            <h3 class= "h3"> Motion Graphic Effects</h3>
+                <label for="firstname"> First Name</label>
+                <input type="text" name="firstname" id="firstname" required>
 
-            <p>This video highlights my skills as a motion graphic effects artist. All the effects showcased here were done in Adobe After Effects for INFOTC 3640 class projects. </p>
-            <br />
-            <p>The first clip shows usage of advanced lightening and lens flares. </p>
-            <br />
-            <p>The second video uses masking, green screen keylight, lower third graphics creation, and composite layers. </p>
-            <br />
-            <p>The third video utilizes reverse motion tracking, animated masks, the liquify tool, and adjustment layers. </p>
-            <br />
-            <p>The fourth video highlights motion blur. </p>
-            <br />
-            <p>Finally, the last video uses fractal noise, compositing, colorama, shatter, and circle effects. This class was the first time I had ever worked with After Effects, so there was a learning curve for me to figure out how the program worked. By the end of the class, I was very impressed with my skills and the different features of After Effects that I was able to master, such as key framing and compositing.  </p>
+                <label for="lastname"> Last Name</label>
+                <input type="text" name="lastname" id="lastname" required>
 
-        </div>
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" required> 
 
-        <div class= "photo"> <iframe src="https://player.vimeo.com/video/679800632?h=053b1225b6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                <p>
+                    Send me an email!
+                    <a href="mailto:elizabethtouyube@gmail.com?Subject=Portfolio%20Website%20Contact" target="_top">Send Email</a>
+                </p>
+                
+                <label for="message"> Message for me</label>
+                <textarea id="message" name="message" required></textarea> <br />
 
+                <button type="submit"> Submit</button>
+
+        </form>
 
         <div class= "Footer">
 
@@ -105,7 +110,6 @@
             </footer>
 
         </div>
-
     </div>
 
 </body>
