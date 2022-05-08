@@ -235,6 +235,9 @@ p + p {
             "Footer";
     }
     nav ul li{
-        font-size:15px;
+        font-size:10px;
+    }
+    .mailphoto, .phonephoto{
+        display:none;
     }
 }
