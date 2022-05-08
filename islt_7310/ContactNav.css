@@ -57,7 +57,7 @@ nav ul li ul li a{
     display: grid;
     min-height: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 10% 60% 15%;
+    grid-template-rows: 15% 10% 65% 10%;
     grid-auto-flow: row;
     gap: .2rem;
     grid-template-areas:
@@ -99,16 +99,13 @@ img{
 
 .Footer{
     grid-area: Footer;
-    position: fixed;
     left: 0;
     bottom: 0;
     padding: 5px 0px 10px 0px;
     width: 100%;
+    background-image: url(stars.jpeg);
     color: white;
     text-align: center;
-    background-image: url(stars.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #mailcontainer{
@@ -193,7 +190,7 @@ label{
         display: grid;
         min-height: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 15% 15% 60% 10%;
+        grid-template-rows: 15% 10% 70% 5%;
         grid-auto-flow: column;
         gap: .2rem;
         grid-template-areas:
@@ -201,5 +198,8 @@ label{
             "Header"
             "maincontent"
             "Footer";
+    }
+    nav ul li{
+        font-size:15px;
     }
 }

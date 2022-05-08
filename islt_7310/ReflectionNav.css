@@ -127,7 +127,6 @@ img{
 
 .Footer{
     grid-area: Footer;
-    position: fixed;
     left: 0;
     bottom: 0;
     padding: 5px 0px 10px 0px;
@@ -202,7 +201,7 @@ p + p {
         display: grid;
         min-height: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 5% 5% 20% 20% 20% 20% 10%;
+        grid-template-rows: 15% 5% 20% 20% 20% 15% 5%;
         grid-auto-flow: column;
         gap: .2rem;
         grid-template-areas:
@@ -232,5 +231,8 @@ p + p {
         display: grid;
         place-items: center;
         object-fit: contain;
+    }
+    nav ul li{
+        font-size:15px;
     }
 }

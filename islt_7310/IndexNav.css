@@ -132,14 +132,9 @@ table td{
 table tr:nth-child(odd) td{
     background-color: white;
 }
-table tr:first-child, table tr:last-child{
-    background-color:#0f77df;
-    color: white;
-}
 
 .Footer{
     grid-area: Footer;
-    position: fixed;
     left: 0;
     bottom: 0;
     padding: 5px 0px 10px 0px;
@@ -224,7 +219,7 @@ p + p {
         display: grid;
         min-height: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 10% 20% 20% 30% 10%;
+        grid-template-rows: 15% 10% 30% 20% 20% 5%;
         grid-auto-flow: column;
         gap: .2rem;
         grid-template-areas:
@@ -234,5 +229,8 @@ p + p {
             "photo"
             "tables"
             "Footer";
+    }
+    nav ul li{
+        font-size:15px;
     }
 }
