@@ -81,21 +81,6 @@ nav ul li ul li a{
     min-height: 100%;
     overflow: scroll;
 }
-.photo{
-    background-color: #7ab8f7;
-    grid-area: photo;
-    margin: 10px;
-    padding: 0 20px 0 20px;
-    min-height: 100%;
-    overflow: scroll;
-    place-items: center;
-}
-
-img{
-    object-fit: cover;
-    min-width:100%;
-    min-width: 90%;
-}
 
 .Footer{
     grid-area: Footer;
@@ -106,6 +91,9 @@ img{
     background-image: url(stars.jpeg);
     color: white;
     text-align: center;
+}
+input{
+    height: 25px;
 }
 
 #mailcontainer{

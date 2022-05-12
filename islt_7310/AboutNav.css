@@ -45,7 +45,8 @@ nav ul li:hover ul{
 }
 
 nav ul li ul li{
-    text-align: center;
+    text-align: left;
+    
 }
 
 nav ul li ul li a{
